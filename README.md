@@ -86,4 +86,4 @@ Ce script est fourni sous la licence [MIT](https://choosealicense.com/licenses/m
 
 ## Remerciements
 
-Un merci spécial à Bahar qui a été mon QA test ingénieur ! Merci pour tous les bugs découverts, même l'abeille morte derrière le micro-ondes.
+Un merci spécial à Bahar qui a été mon ingénieure QA ! Merci pour tous les bugs découverts, même l'abeille morte derrière le micro-ondes.
