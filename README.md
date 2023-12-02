@@ -81,7 +81,7 @@ Suivez les invitations pour saisir les informations pertinentes pour chaque opti
 
 ## Licence
 
-Ce script est fourni sous la licence [MIT](https://choosealicense.com/licenses/mit/). N'hésitez pas à le modifier et à le distribuer selon vos besoins. Si vous rencontrez des problèmes ou avez des suggestions d'amélioration, veuillez ouvrir une [issue](https://github.com/example/repository/issues).
+Ce script est fourni sous la licence [MIT](https://choosealicense.com/licenses/mit/). N'hésitez pas à le modifier et à le distribuer selon vos besoins. Si vous rencontrez des problèmes ou avez des suggestions d'amélioration, veuillez me le signaler.
 
 
 ## Remerciements
