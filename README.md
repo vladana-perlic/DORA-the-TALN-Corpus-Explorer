@@ -60,7 +60,7 @@ Le menu propose les options suivantes :
 - **Taux de citation d'un auteur** : Calculer le taux de citation pour un auteur spécifique.
 - **Taux de citation de tous les auteurs** : Afficher le taux de citation pour tous les auteurs.
 
-Suivez les invitations pour saisir les informations pertinentes pour chaque option.
+Suivez les instructions pour saisir les informations pertinentes pour chaque option.
 
 ## Structure des Fichiers
 
