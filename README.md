@@ -31,7 +31,7 @@ pip install xml.etree.ElementTree fpdf collections tabulate numpy matplotlib sci
 
 Le script peut être utilisé de deux manières :
 
-### 1. Utilisation Directe (Sans Menu)
+### 1. Utilisation directe (sans menu)
 Vous pouvez utiliser directement le script en créant une instance de la classe TALN et en appelant ses méthodes. Voici un exemple :
 
 
@@ -58,19 +58,19 @@ tei_parser.compter_citations_pour_author(author_name="Tanguy")
 tei_parser.count_all_authors(order='desc', top_n=10)
 ```
 
-### 2. Menu Interactif
+### 2. Menu interactif
 Le script inclut un menu interactif qui permet aux utilisateurs de choisir différentes options. Pour utiliser le menu, exécutez le script sans aucun argument en ligne de commande :
 
 
 ```bash
 python LivretDeResumes.py
 ```
-#### Importation Automatique du Fichier TEI XML
+#### Importation automatique du fichier TEI XML
 Le script tentera d'abord d'importer le fichier `corpus_taln_v1.tei.xml` directement. Si le fichier n'est pas trouvé dans le répertoire courant, il demandera ensuite le chemin d'accès au fichier. Assurez-vous que le fichier est situé dans le bon répertoire ou spécifiez le chemin complet si nécessaire.
 
 
 
-### Options du Menu
+### Options du menu
 
 Le menu propose les options suivantes :
 
@@ -82,7 +82,7 @@ Le menu propose les options suivantes :
 
 Suivez les instructions pour saisir les informations pertinentes pour chaque option.
 
-## Structure des Fichiers
+## Structure des fichiers
 
 - `LivretDeResumes.py` : Script Python principal contenant la classe LivretDeResumes et le menu interactif.
 - [`corpus_taln_v1.tei.xml`](https://www.ortolang.fr/market/corpora/corpus-taln) : Fichier TEI XML d'exemple utilisé pour les tests.
