@@ -62,7 +62,7 @@ tei_parser.count_all_authors(order='desc', top_n=10)
 Le script inclut un menu interactif qui permet aux utilisateurs de choisir différentes options. Pour utiliser le menu, exécutez le script sans aucun argument en ligne de commande :
 
 
-```console
+```bash
 python DORA.py
 ```
 #### Importation automatique du fichier TEI XML
