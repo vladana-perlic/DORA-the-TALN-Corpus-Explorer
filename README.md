@@ -20,7 +20,7 @@ Vous pouvez utiliser directement le script en créant une instance de la classe 
 
 ```python
 # Exemple d'utilisation
-tei_parser = LivretDeResumes("corpus_taln_v1.tei.xml", filtre_annee="2014", filtre_mots_cles=["apprentissage automatique", "tal"], format_sortie="console", langue="fr")
+tei_parser = LivretDeResumes("corpus_taln_v1.tei.xml", filtre_annee="2014", filtre_mots_cles=["apprentissage automatique", "tal"], format_sortie="pdf", langue="fr")
 
 # Charger le contenu XML du fichier
 tei_parser.load_xml()
