@@ -84,8 +84,8 @@ Suivez les instructions pour saisir les informations pertinentes pour chaque opt
 
 ## Structure des fichiers
 
-- `LivretDeResumes.py` : Script Python principal contenant la classe LivretDeResumes et le menu interactif.
-- [`corpus_taln_v1.tei.xml`](https://www.ortolang.fr/market/corpora/corpus-taln) : Fichier TEI XML d'exemple utilisé pour les tests.
+- `DORA.py` : Script Python principal contenant la classe TALN et le menu interactif.
+- [`corpus_taln_v1.tei.xml`](https://www.ortolang.fr/market/corpora/corpus-taln) : Corpus TALN (TEI-XML).
 
 ## Dépendances
 
