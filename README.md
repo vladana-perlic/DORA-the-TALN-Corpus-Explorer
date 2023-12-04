@@ -15,18 +15,18 @@ pip install xml.etree.ElementTree fpdf collections tabulate numpy matplotlib sci
 Le script peut être utilisé de deux manières :
 
 ### 1. Utilisation Directe (Sans Menu)
-Vous pouvez utiliser directement le script en créant une instance de la classe LivretDeResumes et en appelant ses méthodes. Voici un exemple :
+Vous pouvez utiliser directement le script en créant une instance de la classe TALN et en appelant ses méthodes. Voici un exemple :
 
 
 ```python
-# Exemple d'utilisation
-tei_parser = LivretDeResumes("corpus_taln_v1.tei.xml", filtre_annee="2014", filtre_mots_cles=["apprentissage automatique", "tal"], format_sortie="pdf", langue="fr")
+# Exemple d'utilisation directe
+tei_parser = TALN("corpus_taln_v1.tei.xml", filtre_annee="2014", filtre_mots_cles=["machine learning", "nlp"], format_sortie="pdf", langue="en")
 
 # Charger le contenu XML du fichier
 tei_parser.load_xml()
 
 # Itérer à travers les éléments TEI et imprimer/exporter les informations d'article en fonction des conditions
-tei_parser.iterer_elements_tei()
+tei_parser.livret_de_resumes()
 
 # Calculer et imprimer la fréquence du terme par année
 tei_parser.imprimer_frequence_terme_par_annee(terme="tal", sortie="graphique")
