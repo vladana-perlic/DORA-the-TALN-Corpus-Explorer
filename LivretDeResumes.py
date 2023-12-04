@@ -304,7 +304,7 @@ class LivretDeResumes:
                     
 
         # Imprimer ou retourner le résultat selon les besoins
-        print(f"{author_name} a été cité {citations_count} fois dans l'ensemble du document.")
+        print(f"\n{author_name} a été cité {citations_count} fois dans l'ensemble du document.\n")
         
         return citations_count
 
@@ -497,16 +497,24 @@ if __name__ == "__main__":
     #tei_parser.count_all_authors(order='descending', top_n=10)
     
     """
+    
+ 
+    
+    # Tentative d'importation du fichier XML par défaut
+    file_path = "corpus_taln_v1.tei.xml"
+    while True:
+        try:
+            tei_parser = LivretDeResumes(file_path)
+            tei_parser.load_xml()
+            print(f"Fichier {file_path} importé avec succès.")
+            break
+        except FileNotFoundError:
+            # Demander à l'utilisateur le chemin vers le fichier XML
+            file_path = input(f"Le fichier {file_path} n'a pas été trouvé. Entrez le chemin vers votre fichier XML : ")
 
     while True:
-        
-
-        # Charger le contenu XML du fichier
-        tei_parser = LivretDeResumes("corpus_taln_v1.tei.xml")
-        tei_parser.load_xml()
-        
+        # Afficher le menu principal et gérer l'interaction avec l'utilisateur
         afficher_menu_principal()
-        
 
 
 
