@@ -63,7 +63,7 @@ Le script inclut un menu interactif qui permet aux utilisateurs de choisir diff�
 
 
 ```bash
-python LivretDeResumes.py
+python DORA.py
 ```
 #### Importation automatique du fichier TEI XML
 Le script tentera d'abord d'importer le fichier `corpus_taln_v1.tei.xml` directement. Si le fichier n'est pas trouvé dans le répertoire courant, il demandera ensuite le chemin d'accès au fichier. Assurez-vous que le fichier est situé dans le bon répertoire ou spécifiez le chemin complet si nécessaire.
