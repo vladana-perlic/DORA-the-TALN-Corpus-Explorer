@@ -1,6 +1,23 @@
-# LivretDeResumes - Script Python pour le Traitement des Corpus TEI XML
+# DORA: The TALN Corpus Explorer
+## ou
+## Découverte et Exploration des Articles TALN
 
-Ce script Python, LivretDeResumes.py, est conçu pour traiter des fichiers TEI XML contenant des informations sur des articles de recherche. Le script offre des fonctionnalités pour filtrer et afficher des informations en fonction de divers critères, tels que l'année de publication, les mots-clés, la langue et le format de sortie.
+Le script Python **DORA** est conçu pour exploiter le Corpus TALN, une collection d'articles provenant des conférences TALN et RÉCITAL, couvrant la période de 1997 à 2019. Le corpus comprend 1602 articles scientifiques en français, totalisant 5,8 millions de mots, présentés au format Text Encoding Initiative (TEI).
+
+
+## Fonctionnalités principales
+
+1. **Livret des résumés :** Le script permet d'extraire et d'afficher les informations clés sur les articles, telles que le titre, l'année de publication, les résumés, et les mots-clés. L'utilisateur peut filtrer les articles par année, mots-clés, et choisir le format de sortie entre la console, le texte ou un fichier PDF.
+
+2. **Évolution par année d'un terme donné :** L'utilisateur peut visualiser graphiquement ou tabulairement l'évolution de la fréquence d'un terme spécifique à travers les années du corpus.
+
+3. **Catégorisation non supervisée des articles (Clustering) :** Le script effectue une catégorisation non supervisée des articles en utilisant l'algorithme k-means pour regrouper les articles similaires. Les résultats sont présentés dans un nuage de points avec des annotations.
+
+4. **Taux de citation d'un auteur :** L'utilisateur peut spécifier un auteur, et le script comptera le nombre de citations de cet auteur dans l'ensemble du corpus.
+
+5. **Taux de citation de tous les auteurs :** Le script fournit une analyse statistique du nombre de citations pour tous les auteurs présents dans le corpus. L'utilisateur peut choisir l'ordre de tri et le nombre d'auteurs à afficher.
+
+
 
 ## Prérequis
 
