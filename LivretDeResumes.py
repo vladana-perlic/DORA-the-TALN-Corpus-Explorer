@@ -15,10 +15,10 @@ import mplcursors
 import re
 
 
-# Définition de la classe LivretDeResumes
-class LivretDeResumes:
+# Définition de la classe TALN
+class TALN:
     def __init__(self, file_path, filtre_annee=None, filtre_mots_cles=None, format_sortie="console", langue = None):
-        # Initialisation de l'objet LivretDeResumes avec les paramètres spécifiés
+        # Initialisation de l'objet TALN avec les paramètres spécifiés
         """
         :param file_path: Chemin du fichier XML TEI à traiter.
         :param filtre_annee: Année de publication à filtrer (par défaut None pour ne pas filtrer par année).
@@ -152,7 +152,7 @@ class LivretDeResumes:
         pdf.output("sortie.pdf")
 
 
-    def iterer_elements_tei(self):
+    def livret_de_resumes(self):
         # Itère à travers les éléments TEI et imprime les informations sur chaque article
         match_found = False  # Supposons qu'aucun match n'est trouvé
 
@@ -407,9 +407,9 @@ def traiter_livret_des_resumes():
     format_sortie = input("Comment souhaitez-vous voir les résultats? ('console', 'texte' ou 'pdf') : ")
 
     # Itérer à travers les éléments TEI et imprimer/exporter les informations d'article en fonction des conditions
-    tei_parser = LivretDeResumes(file_path = file_path, filtre_annee=annee, filtre_mots_cles = mots_cles, langue = langue, format_sortie=format_sortie)
+    tei_parser = TALN(file_path = file_path, filtre_annee=annee, filtre_mots_cles = mots_cles, langue = langue, format_sortie=format_sortie)
     tei_parser.load_xml()
-    tei_parser.iterer_elements_tei()
+    tei_parser.livret_de_resumes()
 
 # Fonction pour traiter l'option "Evolution par année d'un terme donné"
 def traiter_evolution_par_annee():
@@ -466,14 +466,14 @@ if __name__ == "__main__":
     
     # EXEMPLE D'UTILISATION DIRECTE (sans passer par le menu principal):
     
-    # Créer une instance de la classe LivretDeResumes avec des filtres et un format de sortie
-    tei_parser = LivretDeResumes("corpus_taln_v1.tei.xml", filtre_annee = "2014", filtre_mots_cles=["machine learning", "nlp"], format_sortie="console", langue="en") # formats sortie possibles : console, texte, pdf
+    # Créer une instance de la classe TALN avec des filtres et un format de sortie
+    tei_parser = TALN("corpus_taln_v1.tei.xml", filtre_annee = "2014", filtre_mots_cles=["machine learning", "nlp"], format_sortie="console", langue="en") # formats sortie possibles : console, texte, pdf
 
     # Charger le contenu XML du fichier
     tei_parser.load_xml()
 
     # Itérer à travers les éléments TEI et imprimer/exporter les informations d'article en fonction des conditions
-    tei_parser.iterer_elements_tei()
+    tei_parser.livret_de_resumes()
 
     # Calculer et imprimer la fréquence du terme par année
     #tei_parser.imprimer_frequence_terme_par_annee(terme="tal", sortie="graphique")
@@ -504,7 +504,7 @@ if __name__ == "__main__":
     file_path = "corpus_taln_v1.tei.xml"
     while True:
         try:
-            tei_parser = LivretDeResumes(file_path)
+            tei_parser = TALN(file_path)
             tei_parser.load_xml()
             print(f"Fichier {file_path} importé avec succès.")
             break
