@@ -1,4 +1,4 @@
-# DORA: The TALN Corpus Explorer
+# DORA the TALN Corpus Explorer
 ## ou
 ## Découverte et Exploration des Articles TALN
 
